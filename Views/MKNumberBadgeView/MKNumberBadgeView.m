@@ -109,6 +109,7 @@
 	CGPathRef badgePath = [self newBadgePathForTextSize:numberSize];
 	
 	CGRect badgeRect = CGPathGetBoundingBox(badgePath);
+    badgeRect.size.width += 1;
 	
 	badgeRect.origin.x = 0;
 	badgeRect.origin.y = 0;
